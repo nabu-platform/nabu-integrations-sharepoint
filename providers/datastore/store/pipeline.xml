@@ -1,0 +1,5 @@
+<structure interface="be.nabu.libs.datastore.api.WritableDatastore.store" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <field minOccurs="0" name="path" type="java.lang.String"/>
+</structure>

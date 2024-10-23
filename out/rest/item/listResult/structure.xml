@@ -1,0 +1,5 @@
+<structure name="anonymous">
+    <field alias="@odata.context" name="odata.context" type="java.lang.String"/>
+    <field alias="@odata.nextLink" minOccurs="0" name="odata.nextLink" type="java.lang.String"/>
+    <structure definition="nabu.integrations.sharepoint.out.rest.item.item" maxOccurs="unbounded" name="value"/>
+</structure>

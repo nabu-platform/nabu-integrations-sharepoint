@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restEndpoint>
+    <basePath>/v1.0</basePath>
+    <gzip>true</gzip>
+    <host>graph.microsoft.com</host>
+    <omitContentLengthIfEmpty>false</omitContentLengthIfEmpty>
+    <requestType>JSON</requestType>
+    <responseType>JSON</responseType>
+    <secure>true</secure>
+    <securityContext>sharepoint</securityContext>
+    <securityType>oauth2:clientCredentials</securityType>
+</restEndpoint>

@@ -1,0 +1,3 @@
+<structure name="query">
+    <field alias="$select" maxOccurs="unbounded" name="_select" type="java.lang.String"/>
+</structure>

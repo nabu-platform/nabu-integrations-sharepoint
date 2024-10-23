@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.datastore.provider.DatastoreProviderManager" created="2024-10-23T17:41:51.236+02:00" lastModified="2024-10-23T17:42:06.140+02:00" leaf="true" version="4">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.integrations.sharepoint.providers.datastore.retrieve</references>
+    <references>nabu.integrations.sharepoint.providers.datastore.properties</references>
+    <references>nabu.integrations.sharepoint.providers.datastore.store</references>
+    <references>nabu.integrations.sharepoint.providers.datastore.delete</references>
+</node>

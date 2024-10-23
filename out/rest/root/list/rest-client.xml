@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restClient>
+    <method>GET</method>
+    <path>/drives/{driveId}/root/children</path>
+    <output>nabu.integrations.sharepoint.out.rest.item.listResult</output>
+    <lenient>true</lenient>
+    <ignoreRootIfArrayWrapper>true</ignoreRootIfArrayWrapper>
+    <endpoint>nabu.integrations.sharepoint.out.endpoint</endpoint>
+</restClient>

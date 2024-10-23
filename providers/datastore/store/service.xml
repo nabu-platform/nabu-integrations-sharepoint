@@ -1,0 +1,11 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="fc8e5780ae1f4d159cc12b7c8945b056"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Throw"
+			disabled="false"
+			id="f0ff93f515024c23b9d6b87e454aef3e"
+			lineNumber="2"
+			message="Can't store without further information (drive id, path,...)"
+			whitelist="false" xsi:nil="true"/>
+</sequence>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.client.RESTClientManager" created="2024-02-22T10:35:42.364+01:00" lastModified="2024-05-03T10:11:22.417+02:00" leaf="true" version="17">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.integrations.sharepoint.out.rest.item.item</references>
+    <references>nabu.integrations.sharepoint.out.endpoint</references>
+</node>

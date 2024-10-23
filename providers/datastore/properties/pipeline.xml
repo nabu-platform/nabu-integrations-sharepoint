@@ -1,0 +1,4 @@
+<structure interface="be.nabu.libs.datastore.api.Datastore.getProperties" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+</structure>

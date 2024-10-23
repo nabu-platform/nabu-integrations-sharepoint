@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-23T17:24:37.079+02:00" lastModified="2024-10-23T17:29:58.149+02:00" leaf="true" version="4">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>be.nabu.libs.datastore.api.WritableDatastore.store</references>
+    <references>java.lang.String</references>
+    <references>java.net.URI</references>
+    <references>java.io.InputStream</references>
+</node>

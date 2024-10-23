@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restClient>
+    <method>PUT</method>
+    <path>/drives/{driveId}/root:/{path}:/content</path>
+    <inputAsStream>true</inputAsStream>
+    <output>nabu.integrations.sharepoint.out.rest.item.item</output>
+    <lenient>true</lenient>
+    <ignoreRootIfArrayWrapper>true</ignoreRootIfArrayWrapper>
+</restClient>

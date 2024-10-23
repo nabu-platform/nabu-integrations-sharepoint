@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<odata>
+    <endpoint>https://graph.microsoft.com/v1.0</endpoint>
+    <entitySets>sites</entitySets>
+    <entitySets>drives</entitySets>
+    <entitySets>items</entitySets>
+    <expansions>
+        <entity>user</entity>
+        <expansions>proxyAddresses</expansions>
+    </expansions>
+    <ignoreEtag>true</ignoreEtag>
+    <keyAsSegment>true</keyAsSegment>
+    <requestRewriter>dynamics.services.dynamicsRewriter</requestRewriter>
+    <securityContext>sharepoint</securityContext>
+    <securityType>oauth2:clientCredentials</securityType>
+</odata>

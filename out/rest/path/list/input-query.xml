@@ -1,0 +1,5 @@
+<structure name="query">
+    <field alias="$top" minOccurs="0" name="_top" type="java.lang.String"/>
+    <field alias="$skip" minOccurs="0" name="_skip" type="java.lang.String"/>
+    <field alias="$skiptoken" minOccurs="0" name="_skiptoken" type="java.lang.String"/>
+</structure>

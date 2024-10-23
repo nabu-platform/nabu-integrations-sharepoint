@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2024-05-03T10:13:18.812+02:00" lastModified="2024-05-03T10:13:32.645+02:00" leaf="false" version="3">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.integrations.sharepoint.out.odata.entities.siteSelect</references>
+    <references>nabu.web.odata.providers.crud.provider</references>
+</node>

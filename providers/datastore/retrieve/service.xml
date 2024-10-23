@@ -1,0 +1,70 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="840278a8a21e479f964ca01a1f810c4f"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="d5aa95d948d14d7f81f530638e61281f"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="fab6f161751247b9b8556c53f2580fa7"
+				serviceId="nabu.integrations.sharepoint.out.rest.item.download"
+				resultName="resultec536b40c8d34b0380c082b4ecdcc7ce"
+				temporaryMapping="true"
+				x="434"
+				y="90"
+				invocationOrder="1"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="0b338a88cf0847788755ca7122111506"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>result32d91282e4fc444f88427c44acdd4184/driveId</from>
+				<to>path/driveId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="057feabfb3d0425981220ce52c20a2d3"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>result32d91282e4fc444f88427c44acdd4184/itemId</from>
+				<to>path/itemId</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="26e2f2c3f51747d3b0a0a8772751fb5d"
+				serviceId="nabu.integrations.sharepoint.providers.datastore.parse"
+				resultName="result32d91282e4fc444f88427c44acdd4184"
+				temporaryMapping="true"
+				x="20"
+				y="66"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="a3cf4349c6ac44ee92dc6194ec101dc3"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/uri</from>
+				<to>uri</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="aac647d7c30e42b38033c32570bfc5d3"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resultec536b40c8d34b0380c082b4ecdcc7ce/content</from>
+			<to>output/stream</to>
+		</steps>
+	</steps>
+</sequence>
