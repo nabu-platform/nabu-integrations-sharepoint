@@ -6,4 +6,5 @@
     <output>nabu.integrations.sharepoint.out.rest.item.item</output>
     <lenient>true</lenient>
     <ignoreRootIfArrayWrapper>true</ignoreRootIfArrayWrapper>
+    <endpoint>nabu.integrations.sharepoint.out.endpoint</endpoint>
 </restClient>

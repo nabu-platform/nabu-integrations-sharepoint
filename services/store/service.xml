@@ -1,0 +1,138 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="9d181b8cb7f94701ab2eccae3621f725"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="3a83ce76be164ec2b4ce3cbaf412c37c"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="a6a3756c946b4f86b4cb98f3f83c01b2"
+				serviceId="nabu.integrations.sharepoint.out.rest.path.upload"
+				resultName="result1ca8d2faa6df492fa9eef3009cad2747"
+				temporaryMapping="true"
+				x="139"
+				y="57"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="c3ccd9e254cd41e4a7cdb998c31d64da"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/driveId</from>
+				<to>path/driveId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="02dc32e3dcdb4ecf83e8a1d7ca740ff0"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path</from>
+				<to>path/path</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="07b4ebcfdeb441c28c5a4a92022ac5c5"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/content</from>
+				<to>content</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="5cd5c36957734e0cb0e6f9a518952b54"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result1ca8d2faa6df492fa9eef3009cad2747/content</from>
+			<to>item</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="13dcd6039e9748c5a5d9795ac3c1ce50"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="255726819a464372bbf07f99300454bd"
+				serviceId="nabu.utils.Uri.fromComponents"
+				resultName="result0134171abd47481b81c51ea4b6c5f687"
+				temporaryMapping="true"
+				x="343"
+				y="74"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="fb22775a0ad64ce091a7a56569d95029"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>="/" + input/driveId + "/" + item/id</from>
+				<to>components/path</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="f9f9c70a749a4772a0f6202fb66788fc"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>sharepoint</from>
+				<to>components/scheme</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="684e730e01e34322baa61ab149339259"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result0134171abd47481b81c51ea4b6c5f687/uri</from>
+			<to>output/uri</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="abe0a80f5c294c9e9a7b9c3b6869ed63"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>item/size</from>
+			<to>output/properties/size</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="97e6fc1a57fb45f29e9dfbe342cda35e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>item/name</from>
+			<to>output/properties/name</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="c3d260a981a04f0cb7443ab161380cc5"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>item/lastModifiedDateTime</from>
+			<to>output/properties/lastModified</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="bea7f28690df4857a8bfdd62f272657e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>item/file/mimeType</from>
+			<to>output/properties/contentType</to>
+		</steps>
+	</steps>
+</sequence>

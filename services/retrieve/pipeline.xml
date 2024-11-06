@@ -1,0 +1,8 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="uri" type="java.net.URI"/>
+    </structure>
+    <structure name="output">
+        <field minOccurs="0" name="stream" type="java.io.InputStream"/>
+    </structure>
+</structure>

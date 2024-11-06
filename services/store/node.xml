@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-24T08:49:12.918+02:00" lastModified="2024-10-24T08:51:25.429+02:00" leaf="true" version="11">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.integrations.sharepoint.out.rest.path.upload</references>
+    <references>nabu.integrations.sharepoint.out.rest.item.item</references>
+    <references>be.nabu.libs.datastore.api.DataProperties</references>
+    <references>nabu.utils.Uri.fromComponents</references>
+    <references>java.lang.String</references>
+    <references>java.net.URI</references>
+    <references>java.io.InputStream</references>
+</node>

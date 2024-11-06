@@ -1,0 +1,40 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="3ed4974b9da94744a0759fb714c56916"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="8211577e470c48d68374520c07042bfc"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="ec6327660f134ab59e6e463135461174"
+				serviceId="nabu.integrations.sharepoint.providers.datastore.retrieve"
+				resultName="result5fa9798822064c099abcf1c65c8037f9"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="1dd823d048874ea386de194826b2fb9b"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/uri</from>
+				<to>uri</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="11436f2c5a334635a8adf4aedcf41da3"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result5fa9798822064c099abcf1c65c8037f9/stream</from>
+			<to>output/stream</to>
+		</steps>
+	</steps>
+</sequence>

@@ -1,0 +1,12 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="driveId" type="java.lang.String"/>
+        <field name="path" type="java.lang.String"/>
+        <field name="content" type="java.io.InputStream"/>
+    </structure>
+    <structure name="output">
+        <field name="uri" type="java.net.URI"/>
+        <structure definition="be.nabu.libs.datastore.api.DataProperties" name="properties"/>
+    </structure>
+    <structure definition="nabu.integrations.sharepoint.out.rest.item.item" name="item"/>
+</structure>
