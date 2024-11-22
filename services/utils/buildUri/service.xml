@@ -1,0 +1,49 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="16110c185f6f4d47a43977aa32801a88"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="13dcd6039e9748c5a5d9795ac3c1ce50"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="255726819a464372bbf07f99300454bd"
+				serviceId="nabu.utils.Uri.fromComponents"
+				resultName="result0134171abd47481b81c51ea4b6c5f687"
+				temporaryMapping="true"
+				x="343"
+				y="74"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="fb22775a0ad64ce091a7a56569d95029"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>="/" + input/driveId + "/" + input/itemId</from>
+				<to>components/path</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="f9f9c70a749a4772a0f6202fb66788fc"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>sharepoint</from>
+				<to>components/scheme</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="1bbde4228b824e1d8331b0e1ea1434b6"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result0134171abd47481b81c51ea4b6c5f687/uri</from>
+			<to>output/uri</to>
+		</steps>
+	</steps>
+</sequence>

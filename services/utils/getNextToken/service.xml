@@ -1,0 +1,68 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="61d44b7aa2cb4df9be787fc2f6da7d24"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="4cab032d0c5044de8049ee530dcc2eef"
+			label="input/odata.nextLink ~ &quot;.*\$skiptoken=.*&quot;"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="12231db12b5c4070aa9ae5dcbf140d3f"
+				serviceId="nabu.utils.String.replace"
+				resultName="result4018c5032c7f4f6aa34acf037771788e"
+				temporaryMapping="true"
+				x="58"
+				y="83"
+				invocationOrder="3"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="3c8004f1bca9433dbfded637b577c03f"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>^.*\$skiptoken=([^=&amp;]+).*$</from>
+				<to>match</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="709c7d23671e483f9eb4bd0361e41ee7"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>$1</from>
+				<to>replace</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="34d4c4eaae56441aa423aa099d5648c9"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>true</from>
+				<to>useRegex</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="f5b85fb7bb0b4c099a8e78b169795fa0"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/odata.nextLink</from>
+				<to>content</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="6522aa0073b447ba9af35c228437dab3"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result4018c5032c7f4f6aa34acf037771788e/content</from>
+			<to>output/nextToken</to>
+		</steps>
+	</steps>
+</sequence>

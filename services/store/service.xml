@@ -59,45 +59,6 @@
 			disabled="false"
 			id="13dcd6039e9748c5a5d9795ac3c1ce50"
 			lineNumber="3">
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="255726819a464372bbf07f99300454bd"
-				serviceId="nabu.utils.Uri.fromComponents"
-				resultName="result0134171abd47481b81c51ea4b6c5f687"
-				temporaryMapping="true"
-				x="343"
-				y="74"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="fb22775a0ad64ce091a7a56569d95029"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>="/" + input/driveId + "/" + item/id</from>
-				<to>components/path</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="f9f9c70a749a4772a0f6202fb66788fc"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>sharepoint</from>
-				<to>components/scheme</to>
-			</steps>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
-				id="684e730e01e34322baa61ab149339259"
-				mask="false"
-				optional="false"
-				fixedValue="false">
-			<from>result0134171abd47481b81c51ea4b6c5f687/uri</from>
-			<to>output/uri</to>
-		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
 				id="abe0a80f5c294c9e9a7b9c3b6869ed63"
@@ -133,6 +94,45 @@
 				fixedValue="false">
 			<from>item/file/mimeType</from>
 			<to>output/properties/contentType</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="fb988fd2f67749db846d6b86c90a9ac0"
+				serviceId="nabu.integrations.sharepoint.services.utils.buildUri"
+				resultName="resultf961f681922e42eea77aa3c8365618e3"
+				temporaryMapping="true"
+				x="305"
+				y="46"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="2f204fef2a104875b85234c7e95aeeed"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/driveId</from>
+				<to>driveId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="a1f4f14951e449dab04f50e385b6739e"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>item/id</from>
+				<to>itemId</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="c12fca4def4f4c77a8e09452e23d9b17"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resultf961f681922e42eea77aa3c8365618e3/uri</from>
+			<to>output/uri</to>
 		</steps>
 	</steps>
 </sequence>

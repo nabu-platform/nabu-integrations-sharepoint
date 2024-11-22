@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-11-20T11:48:35.148+01:00" lastModified="2024-11-20T11:50:27.864+01:00" leaf="true" version="5">
+    <environmentId>ares</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.utils.Uri.fromComponents</references>
+    <references>java.lang.String</references>
+    <references>java.net.URI</references>
+</node>
