@@ -1,0 +1,4 @@
+<structure name="path">
+    <field name="driveId" type="java.lang.String"/>
+    <field name="itemId" type="java.lang.String"/>
+</structure>
