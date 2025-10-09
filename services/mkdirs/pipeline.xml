@@ -1,0 +1,7 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="driveId" type="java.lang.String"/>
+        <field name="path" type="java.lang.String"/>
+    </structure>
+    <structure name="output"/>
+</structure>

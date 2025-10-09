@@ -1,49 +1,49 @@
 <structure name="value">
-    <field alias="@microsoft.graph.downloadUrl" name="downloadUrl" type="java.net.URI"/>
-    <field name="createdDateTime" type="java.util.Date"/>
-    <field name="eTag" type="java.lang.String"/>
-    <field name="id" type="java.lang.String"/>
-    <field name="lastModifiedDateTime" type="java.util.Date"/>
-    <field name="name" type="java.lang.String"/>
-    <field name="webUrl" type="java.net.URI"/>
-    <field name="cTag" type="java.lang.String"/>
-    <field name="size" type="java.lang.Long"/>
-    <structure name="createdBy">
-        <structure name="user">
-            <field name="email" type="java.lang.String"/>
-            <field name="id" type="java.lang.String"/>
-            <field name="displayName" type="java.lang.String"/>
+    <field alias="@microsoft.graph.downloadUrl" minOccurs="0" name="downloadUrl" type="java.net.URI"/>
+    <field minOccurs="0" name="createdDateTime" type="java.util.Date"/>
+    <field minOccurs="0" name="eTag" type="java.lang.String"/>
+    <field minOccurs="0" name="id" type="java.lang.String"/>
+    <field minOccurs="0" name="lastModifiedDateTime" type="java.util.Date"/>
+    <field minOccurs="0" name="name" type="java.lang.String"/>
+    <field minOccurs="0" name="webUrl" type="java.net.URI"/>
+    <field minOccurs="0" name="cTag" type="java.lang.String"/>
+    <field minOccurs="0" name="size" type="java.lang.Long"/>
+    <structure minOccurs="0" name="createdBy">
+        <structure minOccurs="0" name="user">
+            <field minOccurs="0" name="email" type="java.lang.String"/>
+            <field minOccurs="0" name="id" type="java.lang.String"/>
+            <field minOccurs="0" name="displayName" type="java.lang.String"/>
         </structure>
     </structure>
-    <structure name="lastModifiedBy">
-        <structure name="user">
-            <field name="email" type="java.lang.String"/>
-            <field name="id" type="java.lang.String"/>
-            <field name="displayName" type="java.lang.String"/>
+    <structure minOccurs="0" name="lastModifiedBy">
+        <structure minOccurs="0" name="user">
+            <field minOccurs="0" name="email" type="java.lang.String"/>
+            <field minOccurs="0" name="id" type="java.lang.String"/>
+            <field minOccurs="0" name="displayName" type="java.lang.String"/>
         </structure>
     </structure>
-    <structure name="parentReference">
-        <field name="driveType" type="java.lang.String"/>
-        <field name="driveId" type="java.lang.String"/>
-        <field name="id" type="java.lang.String"/>
-        <field name="name" type="java.lang.String"/>
-        <field name="path" type="java.lang.String"/>
-        <field name="siteId" type="java.lang.String"/>
+    <structure minOccurs="0" name="parentReference">
+        <field minOccurs="0" name="driveType" type="java.lang.String"/>
+        <field minOccurs="0" name="driveId" type="java.lang.String"/>
+        <field minOccurs="0" name="id" type="java.lang.String"/>
+        <field minOccurs="0" name="name" type="java.lang.String"/>
+        <field minOccurs="0" name="path" type="java.lang.String"/>
+        <field minOccurs="0" name="siteId" type="java.lang.String"/>
     </structure>
-    <structure name="fileSystemInfo">
-        <field name="createdDateTime" type="java.util.Date"/>
-        <field name="lastModifiedDateTime" type="java.util.Date"/>
+    <structure minOccurs="0" name="fileSystemInfo">
+        <field minOccurs="0" name="createdDateTime" type="java.util.Date"/>
+        <field minOccurs="0" name="lastModifiedDateTime" type="java.util.Date"/>
     </structure>
     <structure minOccurs="0" name="file">
         <structure minOccurs="0" name="hashes">
             <field minOccurs="0" name="quickXorHash" type="java.lang.String"/>
         </structure>
-        <field name="mimeType" type="java.lang.String"/>
+        <field minOccurs="0" name="mimeType" type="java.lang.String"/>
     </structure>
     <structure minOccurs="0" name="folder">
-        <field name="childCount" type="java.lang.Long"/>
+        <field minOccurs="0" name="childCount" type="java.lang.Long"/>
     </structure>
-    <structure name="shared">
-        <field name="scope" type="java.lang.String"/>
+    <structure minOccurs="0" name="shared">
+        <field minOccurs="0" name="scope" type="java.lang.String"/>
     </structure>
 </structure>

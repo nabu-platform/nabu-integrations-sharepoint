@@ -1,0 +1,57 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="552041e2748d4be8a0d7d6937d78a989"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="641811b17c004d69913630ecf267f6ab"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="0199b3d443e64d36a682c485800893c1"
+				serviceId="nabu.integrations.sharepoint.out.rest.item.update"
+				resultName="result00fc5ecbc3b24e5dbe87a0a9f301d555"
+				temporaryMapping="true"
+				x="229"
+				y="47"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="8ecd659c73c541e9ba1d1af4b041bf27"
+					fixedValue="false">
+				<from>input/driveId</from>
+				<to>path/driveId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="43a87dd2df964d47af60d107d5b743c2"
+					fixedValue="false">
+				<from>input/itemId</from>
+				<to>path/itemId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="d00ee35d4f3347b791153a356ccd481d"
+					fixedValue="false">
+				<from>input/newParentId</from>
+				<to>content/parentReference/id</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="44cf7bfc41644de685371a679c8ae0f4"
+					fixedValue="false">
+				<from>input/newName</from>
+				<to>content/name</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="4f727d026e3c4383801982f4bebe4fa0"
+					fixedValue="false">
+				<from>input/newParentPath</from>
+				<to>content/parentReference/path</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

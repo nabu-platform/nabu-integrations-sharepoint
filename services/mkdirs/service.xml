@@ -1,0 +1,44 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="63a408f2aaa24b2e93c51c60f2687c02"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			comment="The childcount is NOT necessary but it forces serialization (can't control this yet in REST client)"
+			disabled="false"
+			id="ec9833e2c66e4b949770fa72bbc77838"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="5e9027b6d17e4d588eabfe595b7f60d5"
+				serviceId="nabu.integrations.sharepoint.out.rest.path.update"
+				resultName="result0582fbf38d0a474cbc3e13c15d0ed610"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="15375296474141c0b89f1a0b4948e26c"
+					fixedValue="false">
+				<from>input/driveId</from>
+				<to>path/driveId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="eab5fafa2a72437ab664e0e09e1457f9"
+					fixedValue="false">
+				<from>input/path</from>
+				<to>path/path</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="b8b5774e039b4c1f89a590136e8edc99"
+					fixedValue="true">
+				<from>0</from>
+				<to>content/folder/childCount</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

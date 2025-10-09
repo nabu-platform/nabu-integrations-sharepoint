@@ -1,0 +1,10 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="driveId" type="java.lang.String"/>
+        <field name="itemId" type="java.lang.String"/>
+        <field minOccurs="0" name="newParentId" type="java.lang.String"/>
+        <field minOccurs="0" name="newParentPath" type="java.lang.String"/>
+        <field minOccurs="0" name="newName" type="java.lang.String"/>
+    </structure>
+    <structure name="output"/>
+</structure>
