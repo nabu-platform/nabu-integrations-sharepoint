@@ -1,1 +1,3 @@
-<structure name="query"/>
+<structure name="query">
+	<field alias="@microsoft.graph.conflictBehavior" minOccurs="0" name="_microsoft_graph_conflictBehavior" type="java.lang.String"/>
+</structure>
